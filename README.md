@@ -2,7 +2,7 @@
 Mixed-breed dog classifier using Pytorch. 
 
 Meet Lenny. 
-![Lenny](https://user-images.githubusercontent.com/19161994/128657128-2708d61e-086d-417d-94e1-59886e1b5718.jpg | width=200)
+<img src="https://user-images.githubusercontent.com/19161994/128657128-2708d61e-086d-417d-94e1-59886e1b5718.jpg" width="200" height="200">
 Lenny is Lucia's one-year-old rescue puppy, found as a stray in the central valley of CA. Since he was found without a mother or father present, his breed isn't known. His owners think he looks like a cross between a golden retriever and a dachshund but have no evidence besides his outward appearance. 
 
 This project serves as an exploration in finetuning pre-trained CNN models as well as a light-hearted voyage into detecting Lenny's heritage. 
