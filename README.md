@@ -8,7 +8,7 @@ Lenny is Lucia's one-year-old rescue puppy, found as a stray in the central vall
 This project serves as an exploration in finetuning pre-trained CNN models as well as a light-hearted voyage into detecting Lenny's heritage. 
 
 Datasets:
-1. [Stanford Dogs Dataset](https://www.kaggle.com/jessicali9530/stanford-dogs-dataset)
+1. [Stanford Dogs Dataset](https://www.kaggle.com/jessicali9530/stanford-dogs-dataset):
 Images of 120 purebred dog breeds from around the world. This dataset was used for training our CNN.
 2. A hand-curated dataset of mixed breed dogs from Google Images (images: mixed_breeds.zip, annotations: mixed_breeds.csv). This dataset contains 400 images of mixed-breed dogs (20 mixed-breeds @ 20 photos each). Each mixed-breed is a mix of exactly 2 parent breeds found in the Stanford Dogs Dataset. This dataset was used for model testing.
 
