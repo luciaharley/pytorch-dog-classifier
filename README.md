@@ -17,7 +17,7 @@ Images of 120 purebred dog breeds from around the world. This dataset was used f
 Process: 
 In this project, we attempted to recreate the model described in the methods section of this [paper](https://www.academia.edu/33721767/Mixed_Breed_Dogs_Classification). First, we trained a fine-tuned Inception model on the Stanford Dogs Dataset. We then tested the model on our mixed-breed dataset, taking the top 2 highest predicted breeds as the putative parent breeds for each image. 
 
-<img width="800" src="https://user-images.githubusercontent.com/19161994/128911175-df74ec56-1ec4-4f99-81a8-f8218a8a08ff.png">
+<img width="800" src="https://user-images.githubusercontent.com/19161994/128911509-85a5c63d-c4b8-4020-9382-dba887b7fd5f.png">
 
 Like the paper, we calculated accuracy in detecting both parents and at least one parent, as well as topK accuracy for one and both parents. Also like the paper, we found that detecting parent breeds is very difficult, even with a well-trained CNN. As summarized in the paper, this is likely a combination of error from a) introducing new variability to a model tightly trained to one dataset, as well as b) introducing variants that blur inter-class differences and enlarge intra-class variations.  
 
