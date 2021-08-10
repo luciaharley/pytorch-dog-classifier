@@ -21,6 +21,8 @@ In this project, we attempted to recreate the model described in the methods sec
 
 Like the paper, we calculated accuracy in detecting both parents and at least one parent, as well as topK accuracy for one and both parents. Also like the paper, we found that detecting parent breeds is very difficult, even with a well-trained CNN. As summarized in the paper, this is likely a combination of error from a) introducing new variability to a model tightly trained to one dataset, as well as b) introducing variants that blur inter-class differences and enlarge intra-class variations.  
 
+<img width="900" src="https://user-images.githubusercontent.com/19161994/128931317-e00b05cb-eb83-41d6-8c09-9c23b2c5c5ee.png">
+
 This project was done for the course MSDS 631 - Deep Learning, in partial completion of the Masters in Data Science degree program at the University of San Francisco.
 
 Contributors: 
