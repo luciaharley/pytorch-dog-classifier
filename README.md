@@ -15,7 +15,7 @@ Images of 120 purebred dog breeds from around the world. This dataset was used f
 2. A hand-curated dataset of mixed breed dogs from Google Images (images: mixed_breeds.zip, annotations: mixed_breeds.csv). This dataset contains 400 images of mixed-breed dogs (20 mixed-breeds @ 20 photos each). Each mixed-breed is a mix of exactly 2 parent breeds found in the Stanford Dogs Dataset. This dataset was used for model testing.
 
 Process: 
-In this project, we attempted to recreate the model described in the methods section of this [paper](https://www.academia.edu/33721767/Mixed_Breed_Dogs_Classification). First, we trained a fine-tuned Inception model on the Stanford Dogs Dataset. We then tested the model on our mixed-breed dataset, taking the top 2 highest predicted breeds as the putative parent breeds for each image. 
+In this project, we attempted to recreate the model described in the methods section of this [paper](https://www.academia.edu/33721767/Mixed_Breed_Dogs_Classification). First, we trained a fine-tuned Inception model on the Stanford Dogs Dataset. Specifically, we added an extra fully-connected layer and corresponding dropout layer to the existing model to assign scores to the 120 dog breeds. We then tested the model on our mixed-breed dataset, taking the top 2 highest predicted breeds as the putative parent breeds for each image. 
 
 <img width="800" src="https://user-images.githubusercontent.com/19161994/128911509-85a5c63d-c4b8-4020-9382-dba887b7fd5f.png">
 
