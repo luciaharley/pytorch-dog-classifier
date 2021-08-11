@@ -13,13 +13,10 @@ Browse the model training and analysis process in `final_inception.ipynb`.
 Or, test the model yourself using the streamlit app `app.py`.
 
 To run `app.py`:
-1. Clone the repository and unzip all zip files
-2. If you don't have the pytorch suite installed (including cv2 and albumentations), download and activate conda environment:       
-      `conda env create --file environment.yml`  
-      `conda activate torchenv`  
-5. Run app:   
+1. Clone the repository and unzip all zip files 
+2. Run app:   
       `streamlit run app.py`
-7. Upload any image **from the same directory** and see what breed the doggy parents are!
+3. Upload any image **from the same directory** and see what breed the doggy parents are!
 
 Datasets:
 1. [Stanford Dogs Dataset](https://www.kaggle.com/jessicali9530/stanford-dogs-dataset):
