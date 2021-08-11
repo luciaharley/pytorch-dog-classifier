@@ -21,7 +21,17 @@ In this project, we attempted to recreate the model described in the methods sec
 
 Like the paper, we calculated accuracy in detecting both parents and at least one parent, as well as topK accuracy for one and both parents. Also like the paper, we found that detecting parent breeds is very difficult, even with a well-trained CNN. As summarized in the paper, this is likely a combination of error from a) introducing new variability to a model tightly trained to one dataset, as well as b) introducing variants that blur inter-class differences and enlarge intra-class variations.  
 
+TopK accuracy for one and both parents are as follows:
+
+<img width="900" src="https://user-images.githubusercontent.com/19161994/128966747-6aac2da0-e98e-481e-8a04-3a7e3cb84c76.png">
+
+Though accuracy scores are significantly lower than validation accuracy with the purebred model, these scores nearly perfectly align with the scores in the paper that we are replicating -- a clear next step would be to aggregate a labeled mixed breed dataset on the scale of the Stanford Dogs Dataset and train a multi-label CNN classifier directly on those images.
+
+And finally...the moment we have all been waiting for! Who is Lenny? 
+
 <img width="900" src="https://user-images.githubusercontent.com/19161994/128931317-e00b05cb-eb83-41d6-8c09-9c23b2c5c5ee.png">
+
+Though not what we expected at all, these breeds do seem to match the input photo in interesting ways. The ears on the Irish Terrier look very similar to Lenny's ears, and one can't deny that the smile Schipperke looks familiar as well.
 
 This project was done for the course MSDS 631 - Deep Learning, in partial completion of the Masters in Data Science degree program at the University of San Francisco.
 
