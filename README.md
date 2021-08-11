@@ -19,7 +19,7 @@ To run `app.py`:
       `conda activate torchenv`  
 5. Run app:   
       `streamlit run app.py`
-7. Upload any image from the same directory and see what breed the doggy parents are!
+7. Upload any image **from the same directory** and see what breed the doggy parents are!
 
 Datasets:
 1. [Stanford Dogs Dataset](https://www.kaggle.com/jessicali9530/stanford-dogs-dataset):
