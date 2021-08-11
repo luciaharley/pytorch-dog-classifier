@@ -10,7 +10,11 @@ import torch.nn as nn
 from torch.utils.data import Dataset, DataLoader  
 from utils import *
 
+st.set_page_config(layout="wide")
 st.title("Mixed-Breed Dog Classifier")
+st.sidebar.header('Welcome!')
+st.sidebar.markdown("To begin, upload any photo. Square or close to square photos will display better!")
+st.sidebar.markdown("In this project, we attempted to recreate the model described in the methods section of this [paper](https://www.academia.edu/33721767/Mixed_Breed_Dogs_Classification). First, we trained a fine-tuned Inception model on the Stanford Dogs Dataset. Specifically, we added an extra fully-connected layer and corresponding dropout layer to the existing model to assign scores to the 120 dog breeds. We then tested the model on our mixed-breed dataset, taking the top 2 highest predicted breeds as the putative parent breeds for each image.")
 
 # load breed encodings
 with open('idx2breed.pickle', 'rb') as handle:
@@ -51,9 +55,16 @@ if uploaded_file is not None:
     null_label = pd.get_dummies(single_test_df['Label'])
     single_test_loader = loader(single_test_df, null_label, batch_size = 1, obj = 'test')
     
-    # display uploaded image
-    st.image(image1, caption='Your Dog', use_column_width=False)
-    st.write('')
+    # display uploaded image - use columns to center it
+    col1, col2, col3 = st.beta_columns([1,1,2.4])
+    with col1:
+        st.write("")
+    with col2:
+        st.image(image1, use_column_width=False)
+    with col3:
+        st.write("")
+    st.write("")
+    
 
     # run image through model
     inputs, _ = next(iter(single_test_loader))
@@ -70,6 +81,11 @@ if uploaded_file is not None:
 
     # display results
     stanford_image_path = 'stanford-dogs-dataset/images/Images'
+    
+    plus = cv2.imread('plus.png')
+    plus = cv2.cvtColor(plus, cv2.COLOR_BGR2RGB)
+    plus = cv2.resize(plus, (150,300))
+    
     image2 = cv2.imread(stanford_image_path + parent1_row.Path.values[0])
     image2 = cv2.cvtColor(image2, cv2.COLOR_BGR2RGB)
     image2 = cv2.resize(image2, (299,299))
@@ -78,5 +94,6 @@ if uploaded_file is not None:
     image3 = cv2.cvtColor(image3, cv2.COLOR_BGR2RGB)
     image3 = cv2.resize(image3, (299,299))
 
-    st.image([image2,image3], caption=['Predicted Parent 1','Predicted Parent 2'], use_column_width=False)
+    st.image([image2,plus, image3], caption=[f"Predicted Parent 1: {parent1_row.Name.values[0]}", '',
+                                       f"Predicted Parent 2: {parent2_row.Name.values[0]}"], use_column_width=False)
 
