@@ -9,6 +9,15 @@ This project serves as an exploration in finetuning pre-trained CNN models as we
 
 <img width="900" src="https://user-images.githubusercontent.com/19161994/128658405-02f839b7-edab-4376-8aa6-5c2c13a8b1c9.png">
 
+Browse the model training and analysis process in `final_inception.ipynb`.
+Or, test the model yourself using the streamlit app `app.py`.
+
+To run `app.py`:
+1. Clone the repository and unzip all zip files
+2. Run app 
+  `streamlit run app.py`
+3. Upload any image from the same directory and see what breed the doggy parents are!
+
 Datasets:
 1. [Stanford Dogs Dataset](https://www.kaggle.com/jessicali9530/stanford-dogs-dataset):
 Images of 120 purebred dog breeds from around the world. This dataset was used for training our CNN.
