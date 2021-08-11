@@ -14,8 +14,8 @@ Or, test the model yourself using the streamlit app `app.py`.
 
 To run `app.py`:
 1. Clone the repository and unzip all zip files
-2. Download and activate conda environment 
-   `conda env create --file envname.yml`  
+2. Download and activate conda environment   
+   `conda env create --file environment.yml`  
    `conda activate torchenv`  
 5. Run app `streamlit run app.py`
 6. Upload any image from the same directory and see what breed the doggy parents are!
