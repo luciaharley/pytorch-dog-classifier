@@ -21,7 +21,7 @@ In this project, we attempted to recreate the model described in the methods sec
 
 Like the paper, we calculated accuracy in detecting both parents and at least one parent, as well as topK accuracy for one and both parents. Also like the paper, we found that detecting parent breeds is very difficult, even with a well-trained CNN. As summarized in the paper, this is likely a combination of error from a) introducing new variability to a model tightly trained to one dataset, as well as b) introducing variants that blur inter-class differences and enlarge intra-class variations.  
 
-TopK accuracy for one and both parents are as follows:
+On the (purebred) training data, the model yielded 77.8% validation accuracy after 10 epochs. For the mixed-breed test data, TopK accuracy for one and both parents are as follows:
 
 <img width="900" src="https://user-images.githubusercontent.com/19161994/128966747-6aac2da0-e98e-481e-8a04-3a7e3cb84c76.png">
 
