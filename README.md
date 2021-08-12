@@ -18,16 +18,17 @@ To run `app.py`:
       `streamlit run app.py`
 3. Upload any image **from the same directory** and see what breed the doggy parents are!
 
-Datasets:
+## Datasets
 1. [Stanford Dogs Dataset](https://www.kaggle.com/jessicali9530/stanford-dogs-dataset):
 Images of 120 purebred dog breeds from around the world. This dataset was used for training our CNN.
 2. A hand-curated dataset of mixed breed dogs from Google Images (images: mixed_breeds.zip, annotations: mixed_breeds.csv). This dataset contains 400 images of mixed-breed dogs (20 mixed-breeds @ 20 photos each). Each mixed-breed is a mix of exactly 2 parent breeds found in the Stanford Dogs Dataset. This dataset was used for model testing.
 
-Process: 
+## Process
 In this project, we attempted to recreate the model described in the methods section of this [paper](https://www.academia.edu/33721767/Mixed_Breed_Dogs_Classification). First, we trained a fine-tuned Inception model on the Stanford Dogs Dataset. Specifically, we added an extra fully-connected layer and corresponding dropout layer to the existing model to assign scores to the 120 dog breeds. We then tested the model on our mixed-breed dataset, taking the top 2 highest predicted breeds as the putative parent breeds for each image. 
 
 <img width="800" src="https://user-images.githubusercontent.com/19161994/128912897-2d094778-6bc6-413c-b969-bb26aa81fe75.png">
 
+## Model Performance
 Like the paper, we calculated accuracy in detecting both parents and at least one parent, as well as topK accuracy for one and both parents. Also like the paper, we found that detecting parent breeds is very difficult, even with a well-trained CNN. As summarized in the paper, this is likely a combination of error from a) introducing new variability to a model tightly trained to one dataset, as well as b) introducing variants that blur inter-class differences and enlarge intra-class variations.  
 
 On the (purebred) training data, the model yielded 77.8% validation accuracy after 10 epochs. For the mixed-breed test data, TopK accuracy for one and both parents are as follows:
@@ -36,6 +37,7 @@ On the (purebred) training data, the model yielded 77.8% validation accuracy aft
 
 Though accuracy scores are significantly lower than validation accuracy with the purebred model, these scores nearly perfectly align with the scores in the paper that we are replicating -- a clear next step would be to aggregate a labeled mixed breed dataset on the scale of the Stanford Dogs Dataset and train a multi-label CNN classifier directly on those images.
 
+## Lenny's Results
 And finally...the moment we have all been waiting for! Who is Lenny? 
 
 <img width="900" src="https://user-images.githubusercontent.com/19161994/128931317-e00b05cb-eb83-41d6-8c09-9c23b2c5c5ee.png">
