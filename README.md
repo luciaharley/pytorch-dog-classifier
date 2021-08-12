@@ -15,9 +15,11 @@ Or, test the model yourself using the streamlit app `app.py`.
 To run `app.py`:
 1. Clone the repository and unzip all zip files 
 2. Create a virtual environment and download the necessary packackes using requirements.txt:
-`$ python -m venv torch-env
+```
+$ python -m venv torch-env
  $ source torch-env/bin/activate
- $ python -m pip install -r requirements.txt`
+ $ python -m pip install -r requirements.txt
+```
 4. Run app:   
  `streamlit run app.py`
 3. Upload any image **from the same directory** and see what breed the doggy parents are!
