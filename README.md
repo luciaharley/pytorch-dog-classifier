@@ -9,12 +9,12 @@ This project serves as an exploration in finetuning pre-trained CNN models as we
 
 <img width="900" src="https://user-images.githubusercontent.com/19161994/128658405-02f839b7-edab-4376-8aa6-5c2c13a8b1c9.png">
 
-Browse the model training and analysis process in `final_inception.ipynb`.
-Or, test the model yourself using the streamlit app `app.py`.
+Browse the model training and analysis process in [final_inception.ipynb](https://github.com/luciaharley/pytorch-dog-classifier/blob/main/final_inception.ipynb).
+Or, test the model yourself using the streamlit app [app.py](https://github.com/luciaharley/pytorch-dog-classifier/blob/main/app.py).
 
-To run `app.py`:
+To run app.py:
 1. Clone the repository and unzip all zip files 
-2. Create a virtual environment and download the necessary packackes using requirements.txt:
+2. Create a virtual environment and download the necessary packackes using [requirements.txt]():
 ```
 $ python -m venv torch-env
  $ source torch-env/bin/activate
