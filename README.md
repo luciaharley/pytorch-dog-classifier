@@ -44,6 +44,11 @@ And finally...the moment we have all been waiting for! Who is Lenny?
 
 Though not what we expected at all, these breeds do seem to match the input photo in interesting ways. The ears on the Irish Terrier look very similar to Lenny's ears, and one can't deny that the smile Schipperke looks familiar as well.
 
+## App demo
+To upload a photo of your dog (or your friend) and see who their doggy parents are, follow the installation instructions above and run our locally-hosted Streamlit app: 
+
+<img width="900" src="https://user-images.githubusercontent.com/19161994/129119476-96715a7f-a3b7-4a8a-b4b8-a76fda44ee4d.png">
+
 This project was done for the course MSDS 631 - Deep Learning, in partial completion of the Masters in Data Science degree program at the University of San Francisco.
 
 Contributors: 
