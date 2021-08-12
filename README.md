@@ -20,8 +20,7 @@ To run app.py:
  $ source torch-env/bin/activate
  $ python -m pip install -r requirements.txt
 ```
-4. Run app:   
- `streamlit run app.py`
+4. Run app`streamlit run app.py`
 3. Upload any image **from the same directory** and see what breed the doggy parents are!
 
 ## Datasets
